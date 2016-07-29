@@ -21,6 +21,12 @@ namespace ResturantWebApp.Controllers
             return View(await db.Dishes.ToListAsync());
         }
 
+        // GET: Dishes for menu page
+        public async Task<ActionResult> Menu()
+        {
+            return View(await db.Dishes.ToListAsync());
+        }
+
         // GET: Dishes/Details/5
         public async Task<ActionResult> Details(int? id)
         {

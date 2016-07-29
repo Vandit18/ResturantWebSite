@@ -1,0 +1,50 @@
+﻿@model IEnumerable<ResturantWebApp.Models.Dish>
+@{
+    ViewBag.Title = "Menu Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-offset-2 col-md-8">
+        <h2>Menu Page</h2>
+        @{string[] type = { "Rice", "Drinks", "Breads", "Appitizers", "Curries", "Cababs" }; }
+
+        @foreach (string shortDesc in type)
+        {
+            <h3>@shortDesc</h3>
+            <table class="table">
+                @foreach (var item in Model)
+                {
+                    if (item.DishShortDesc == shortDesc)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.DishName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.DishThumbImage)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.DishLargeImage)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.DishShortDesc)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.DishDesc)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Price)
+                            </td>
+                        </tr>
+                    }
+
+                }
+            </table>
+
+        }
+        
+        
+
+    </div>
+</div>

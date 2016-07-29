@@ -25,7 +25,8 @@ namespace ResturantWebApp
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/css/full-slider.css"));
+                      "~/Content/css/full-slider.css",
+                      "~/Content/Site.css"));
 
             //bundles.Add(new StyleBundle("~/bundles/TemplateCSS").Include(
             //    "~/Content/css/bootstrap.min.css",
