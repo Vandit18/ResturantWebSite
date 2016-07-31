@@ -27,6 +27,21 @@ namespace ResturantWebApp.Controllers
             return View(await db.Dishes.ToListAsync());
         }
 
+        public async Task<ActionResult> MenuDetail(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Dish dish = await db.Dishes.FindAsync(id);
+            if (dish == null)
+            {
+                return HttpNotFound();
+            }
+            return View(dish);
+        }
+
+
         // GET: Dishes/Details/5
         public async Task<ActionResult> Details(int? id)
         {
@@ -53,7 +68,7 @@ namespace ResturantWebApp.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "DishID,DishName,DishThumbImage,DishLargeImage,DishShortDesc,DishDesc,Price")] Dish dish)
+        public async Task<ActionResult> Create([Bind(Include = "DishID,DishType,DishName,DishThumbImage,DishLargeImage,DishShortDesc,DishDesc,Price")] Dish dish)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +100,7 @@ namespace ResturantWebApp.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "DishID,DishName,DishThumbImage,DishLargeImage,DishShortDesc,DishDesc,Price")] Dish dish)
+        public async Task<ActionResult> Edit([Bind(Include = "DishID,DishType,DishName,DishThumbImage,DishLargeImage,DishShortDesc,DishDesc,Price")] Dish dish)
         {
             if (ModelState.IsValid)
             {

@@ -20,10 +20,14 @@ namespace ResturantWebApp.Models
 
         [Required]
         [StringLength(50)]
+        public string DishType { get; set; }
+
+        [Required]
+        [StringLength(50)]
         public string DishLargeImage { get; set; }
 
         [Required]
-        [StringLength(200)]
+        [StringLength(90)]
         public string DishShortDesc { get; set; }
 
         [Required]

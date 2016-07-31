@@ -186,8 +186,56 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assest\img\DishImages\ML-Large.jpg" />
-    <Content Include="Assest\img\DishImages\ML-Thumbnail.jpg" />
+    <Content Include="Assest\img\DishImages\AlooPakora-Large.jpg" />
+    <Content Include="Assest\img\DishImages\AlooPakora-Thumbnail.jpg" />
+    <Content Include="Assest\img\DishImages\Bhatura-Large.jpg" />
+    <Content Include="Assest\img\DishImages\Bhatura-Thumbnail.JPG" />
+    <Content Include="Assest\img\DishImages\Chicken-Large.jpg" />
+    <Content Include="Assest\img\DishImages\Chicken-Thumbnail.jpg" />
+    <Content Include="Assest\img\DishImages\ChickenBiriyani-Large.jpg" />
+    <Content Include="Assest\img\DishImages\ChickenBiriyani-Thumbnail.jpg" />
+    <Content Include="Assest\img\DishImages\ChickenFry-Large.jpg" />
+    <Content Include="Assest\img\DishImages\ChickenFry-Thumbnail.jpg" />
+    <Content Include="Assest\img\DishImages\Fish-Large.jpg" />
+    <Content Include="Assest\img\DishImages\Fish-Thumbnail.png" />
+    <Content Include="Assest\img\DishImages\Hara-Large.jpg" />
+    <Content Include="Assest\img\DishImages\Hara-Thumbnail.jpg" />
+    <Content Include="Assest\img\DishImages\JeeraRice-Large.jpg" />
+    <Content Include="Assest\img\DishImages\JeeraRice-Thumbnail.jpg" />
+    <Content Include="Assest\img\DishImages\Kulcha-Large.jpg" />
+    <Content Include="Assest\img\DishImages\Kulcha-Thumbnail.JPG" />
+    <Content Include="Assest\img\DishImages\Lamb-Large.jpg" />
+    <Content Include="Assest\img\DishImages\Lamb-Thumbnail.jpg" />
+    <Content Include="Assest\img\DishImages\Lassi-Large.jpg" />
+    <Content Include="Assest\img\DishImages\Lassi-Thumbnail.jpg" />
+    <Content Include="Assest\img\DishImages\MasalaChai-Thumbnail.jpg" />
+    <Content Include="Assest\img\DishImages\MasalaTea-Large.jpg" />
+    <Content Include="Assest\img\DishImages\Naan-Large.jpg" />
+    <Content Include="Assest\img\DishImages\Naan-Thumbnail.jpg" />
+    <Content Include="Assest\img\DishImages\Paneer-Large.jpg" />
+    <Content Include="Assest\img\DishImages\Paneer-Thumbnail.JPG" />
+    <Content Include="Assest\img\DishImages\PaniPuri-Large.jpg" />
+    <Content Include="Assest\img\DishImages\Panipuri-Thumbnail.png" />
+    <Content Include="Assest\img\DishImages\Paratha-Large.jpg" />
+    <Content Include="Assest\img\DishImages\Paratha-Thumbnail.jpg" />
+    <Content Include="Assest\img\DishImages\PlainRice-Large.jpg" />
+    <Content Include="Assest\img\DishImages\PlainRice-Thumbnail.jpg" />
+    <Content Include="Assest\img\DishImages\Potato-Large.jpg" />
+    <Content Include="Assest\img\DishImages\Potato-Thumbnail.jpg" />
+    <Content Include="Assest\img\DishImages\PrawnSalad-Large.jpg" />
+    <Content Include="Assest\img\DishImages\PrawnSalad-Thumbnail.jpg" />
+    <Content Include="Assest\img\DishImages\Pulao-Large.jpg" />
+    <Content Include="Assest\img\DishImages\Pulao-Thumbnail.jpg" />
+    <Content Include="Assest\img\DishImages\Roti-Large.jpg" />
+    <Content Include="Assest\img\DishImages\Roti-Thumbnail.jpg" />
+    <Content Include="Assest\img\DishImages\Samosa-Large.jpg" />
+    <Content Include="Assest\img\DishImages\Samosa-Thumbnail.jpg" />
+    <Content Include="Assest\img\DishImages\Shikanji-Large.jpg" />
+    <Content Include="Assest\img\DishImages\shikanji-Thumbnail.jpg" />
+    <Content Include="Assest\img\DishImages\TandoorChicken-Thumbnail.jpg" />
+    <Content Include="Assest\img\DishImages\TandooriChicken-Large.jpg" />
+    <Content Include="Assest\img\DishImages\Tea-Large.jpg" />
+    <Content Include="Assest\img\DishImages\Tea-Thumbnail.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -269,6 +317,7 @@
     <Content Include="Views\Dishes\Edit.cshtml" />
     <Content Include="Views\Dishes\Index.cshtml" />
     <Content Include="Views\Dishes\Menu.cshtml" />
+    <Content Include="Views\Dishes\MenuDetail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
